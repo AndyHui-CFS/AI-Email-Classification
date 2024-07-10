@@ -14,22 +14,22 @@
 
 <body>
     <h2>Please Input the Test Email in the Following Form</h2>
-    <form method="post" action="/add-date">
+    <form method="post" action="/add-new-data">
         <p>
-            <label for="from-email">From (email):</label>
-            <input id="from-email" type="email" required>
+            <label for="from_email">From (email):</label>
+            <input id="from_email" name="from_email" type="email" required>
         </p>
         <p>
-            <label for="to=email">To (to email):</label>
-            <input id="to=email" type="email" required>
+            <label for="to_email">To (to email):</label>
+            <input id="to_email" name="to_email" type="email" required>
         </p>
         <p>
             <label for="subject">Subject Header:</label>
-            <textarea id="textarea" cols="40" rows="7"></textarea>
+            <textarea id="textarea" name="subject" cols="40" rows="7"></textarea>
         </p>
         <p>
-            <label for="email-content">Email Content:</label>
-            <textarea id="email-content" cols="40" rows="20"></textarea>
+            <label for="email_content">Email Content:</label>
+            <textarea id="email_content" name="email_content" cols="40" rows="20"></textarea>
         </p>
         <p>
             <label for="importantce">Email importantce:</label>
@@ -50,6 +50,6 @@
                 <option value="Public Relations and Community Outreach">Public Relations and Community Outreach</option>
             </select>
         </p>
+        <button>Sumbit Form to Server</button>
     </form>
-    <button>Sumbit Form to Server</button>
 </body>
