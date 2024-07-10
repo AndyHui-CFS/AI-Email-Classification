@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>A webpage for creating training data for Llama Model</title>
+    <style>
+        form  { display: table;      }
+        p     { display: table-row;  }
+        label { display: table-cell; 
+                vertical-align: top;
+        }
+        input { display: table-cell; }
+        textarea {display: table-cell;}
+    </style>
+</head>
+
+<body>
+    <h2>Please Input the Test Email in the Following Form</h2>
+    <form method="post" action="/add-date">
+        <p>
+            <label for="from-email">From (email):</label>
+            <input id="from-email" type="email" required>
+        </p>
+        <p>
+            <label for="to=email">To (to email):</label>
+            <input id="to=email" type="email" required>
+        </p>
+        <p>
+            <label for="subject">Subject Header:</label>
+            <textarea id="textarea" cols="40" rows="7"></textarea>
+        </p>
+        <p>
+            <label for="email-content">Email Content:</label>
+            <textarea id="email-content" cols="40" rows="20"></textarea>
+        </p>
+        <p>
+            <label for="importantce">Email importantce:</label>
+            <select name="importantce" id="importantce" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </p>
+        <p>
+            <label for="category">Email category</label>
+            <select name="category" id="category" required>
+                <option value="Unknown">Unknown</option>
+                <option value="Patient Care and Service">Patient Care and Service</option>
+                <option value="Technical and IT Support">Technical and IT Support</option>
+                <option value="Human Resources and Staffing">Human Resources and Staffing</option>
+                <option value="Administrative and Policy Inquiries">Administrative and Policy Inquiries</option>
+                <option value="Public Relations and Community Outreach">Public Relations and Community Outreach</option>
+            </select>
+        </p>
+    </form>
+    <button>Sumbit Form to Server</button>
+</body>
