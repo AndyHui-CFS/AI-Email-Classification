@@ -6,8 +6,8 @@ const jsonObject = JSON.parse(fs.readFileSync("./Test-Data-Generator/data-set/tr
 
 const dataArray = jsonObject.data_set;
 
-console.log(dataArray[1].instruction);
-console.log(dataArray[1].input);
-console.log(dataArray[1].output);
+console.log(dataArray[2].instruction);
+console.log(dataArray[2].input);
+console.log(dataArray[2].output);
 
 //console.log(input)

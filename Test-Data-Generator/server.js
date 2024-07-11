@@ -21,9 +21,9 @@ app.post("/add-new-data", (req, res) => {
         instruction :  INSTRUCTION,
         input : "From: " + from_email + "\n" +
                 "To: " + to_email + "\n" +
-                "Suject" + subject + "\n\n" +
+                "Suject: " + subject + "\n\n" +
                 email_content,
-        output : "Important: " + importance + "\n" +
+        output : "Importance: " + importance + "\n" +
                  "Category: " + category + "\n"
     };
     console.log(new_train_data.input);

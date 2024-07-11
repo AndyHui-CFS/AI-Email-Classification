@@ -7,8 +7,18 @@
     },
     {
       "instruction": "You are a clerk working at Hong Kong Hospital Authority classifying received emails into one of the three levels of importance and one of the five categories.\nThe three levels of importance are:\n\t1. High\n\t2. Medium\n\t3. Low\n\nThe five categories are:\n\t1. Patient Care and Services\n\t2. Technical and IT Support\n\t3. Human Resources and Staffing\n\t4. Administrative and Policy Inquiries\n\t5. Public Relations and Community Outreach\n\t6. Unknown",
-      "input": "From: 123@test.com\nTo: 123@test.com\nSuject123\n\n123",
-      "output": "Important: undefined\nCategory: Patient Care and Service\n"
+      "input": "From: chriswong@gmail.com\nTo: enquiry@ha.org.hk\nSuject: Job Application for Executive Assistant II\n\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the executive assistant II position with the Hospital Authority. I have been working in the medical industry as an executive assistant for over a decade and I am very excited to join the Hospital Authority to contribute to society.\r\n\r\nI have attached a copy of my resume to this email so that you can learn more about me. I am highly motivated to establish a career in the Hospital Authority.\r\n\r\nIf you are interested in learning more about me or have any suitable job position available, please feel free to contact me at your earliest convivence, You can reach me via phone at +852 87654321 or by email at chriswong@gmail.com\r\n\r\nThank you for your time and kind patience. Hope to hear from you soon.\r\n\r\nYours faithfully, \r\nChris Wong",
+      "output": "Important: Low\nCategory: Human Resources and Staffing\n"
+    },
+    {
+      "instruction": "You are a clerk working at Hong Kong Hospital Authority classifying received emails into one of the three levels of importance and one of the five categories.\nThe three levels of importance are:\n\t1. High\n\t2. Medium\n\t3. Low\n\nThe five categories are:\n\t1. Patient Care and Services\n\t2. Technical and IT Support\n\t3. Human Resources and Staffing\n\t4. Administrative and Policy Inquiries\n\t5. Public Relations and Community Outreach\n\t6. Unknown",
+      "input": "From: katychan@hotmail.com\nTo: enquiry@ha.org.hk\nSuject: Request for Medical Follow-up Appointment Deferral\n\nDear Sir/Madam,\r\n\r\nOriginally, I had a follow-up appointment at the Department of Obstetrics & Gynaecology, Queen Elizabeth Hospital at 3:15 p.m. on 19th July 2024. However, due to some unexpected family matters, I am unable to attend the follow-up meeting. Therefore, I would like to request to reschedule my appointment one week later at 3:15 p.m. on 26th July 2024. \r\n\r\nPlease let me know whether the rescheduling is possible asap. Thank you\r\n\r\nYours sincerely, \r\nKaty Chan",
+      "output": "Important: Medium\nCategory: Patient Care and Service\n"
+    },
+    {
+      "instruction": "You are a clerk working at Hong Kong Hospital Authority classifying received emails into one of the three levels of importance and one of the five categories.\nThe three levels of importance are:\n\t1. High\n\t2. Medium\n\t3. Low\n\nThe five categories are:\n\t1. Patient Care and Services\n\t2. Technical and IT Support\n\t3. Human Resources and Staffing\n\t4. Administrative and Policy Inquiries\n\t5. Public Relations and Community Outreach\n\t6. Unknown",
+      "input": "From: emilywongwork123@yahoo.com\nTo: enquiry@ha.org.hk\nSuject: Current Waiting Time for New Case Booking for Specialist Out-patient Service at Specialty of Ear, Nose, Throat\n\nDear Sir/Madam,\r\n\r\nHi, I would like to ask what is the current waiting time for new case booking for specialist out-patient service at the specialty of Ear, Nose Throat? \r\nI cannot find the information online.\r\nCan you provide me with this information or a link to the website containing the waiting time?\r\n\r\nThank you for your hard work!\r\n\r\nBest regards. \r\nEmily",
+      "output": "Important: Low\nCategory: Patient Care and Service\n"
     }
   ]
 }
