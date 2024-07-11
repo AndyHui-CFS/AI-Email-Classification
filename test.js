@@ -6,8 +6,19 @@ const jsonObject = JSON.parse(fs.readFileSync("./Test-Data-Generator/data-set/tr
 
 const dataArray = jsonObject.data_set;
 
-console.log(dataArray[2].instruction);
-console.log(dataArray[2].input);
-console.log(dataArray[2].output);
+function printAllData(){
+    for(var i = 0; i < dataArray.length; i++){
+        console.log(dataArray[i].instruction);
+        console.log(dataArray[i].input);
+        console.log(dataArray[i].output);
+    }
+}
 
-//console.log(input)
+function printSpecificData(i){
+    console.log(dataArray[i].instruction);
+    console.log(dataArray[i].input);
+    console.log(dataArray[i].output);
+}
+
+printAllData();
+printSpecificData(2);
