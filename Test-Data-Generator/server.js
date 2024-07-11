@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: true}));
 const fs = require("fs");
 
 //The input message
-const INSTRUCTION = "You are a clerk working at Hong Kong Hospital Authority classifying received emails into one of the three levels of importance and one of the five categories.\nThe three levels of importance are:\n\t1. High\n\t2. Medium\n\t3. Low\n\nThe five categories are:\n\t1. Patient Care and Services\n\t2. Technical and IT Support\n\t3. Human Resources and Staffing\n\t4. Administrative and Policy Inquiries\n\t5. Public Relations and Community Outreach\n\t6. Unknown";
+const INSTRUCTION = "You are a clerk working at Hong Kong Hospital Authority classifying received emails into one of the three levels of importance and one of the five categories.\nThe three levels of importance are:\n\t1. High\n\t2. Medium\n\t3. Low\n\nThe five categories are:\n\t1. Patient Care and Services\n\t2. Technical and IT Support\n\t3. Human Resources and Staffing\n\t4. Administrative and Policy Inquiries\n\t5. Public Relations and Community Outreach\n\t6. Spam";
 app.post("/add-new-data", (req, res) => {
 
     console.log("Entered");
@@ -30,10 +30,10 @@ app.post("/add-new-data", (req, res) => {
     console.log(new_train_data.output);
 
     //Add the new train data to the json file
-    const train_data = JSON.parse(fs.readFileSync("./data-set/train-data-email.json"));
+    const train_data = JSON.parse(fs.readFileSync("./data-set/test-data-email.json"));
     console.log(train_data);
     train_data.data_set.push(new_train_data);
-    fs.writeFileSync("./data-set/train-data-email.json", JSON.stringify(train_data, null, 2));
+    fs.writeFileSync("./data-set/test-data-email.json", JSON.stringify(train_data, null, 2));
 
     res.status(201)
 });
