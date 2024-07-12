@@ -21,4 +21,4 @@ function printSpecificData(i){
 }
 
 //printAllData();
-printSpecificData(0);
+printSpecificData(6);
