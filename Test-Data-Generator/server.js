@@ -21,7 +21,7 @@ app.post("/add-new-data", (req, res) => {
         instruction :  INSTRUCTION,
         input : "From: " + from_email + "\n" +
                 "To: " + to_email + "\n" +
-                "Suject: " + subject + "\n\n" +
+                "Subject: " + subject + "\n\n" +
                 email_content,
         output : "Importance: " + importance + "\n" +
                  "Category: " + category + "\n"
