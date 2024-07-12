@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>A webpage for creating training data for Llama Model</title>
+    <style>
+        form  { display: table;      }
+        p     { display: table-row;  }
+        label { display: table-cell; 
+                vertical-align: top;
+        }
+        input { display: table-cell; }
+        textarea {display: table-cell;}
+    </style>
+</head>
+
+<body>
+    <h2>Please Input the Test Email in the Following Form</h2>
+    <form method="post" action="/add-new-data">
+        <p>
+            <label for="gpt_output">GPT output:</label>
+            <textarea id="gpt_output" name="gpt_output" cols="40" rows="20"></textarea>
+        </p>
+        <button>Sumbit Form to Server</button>
+    </form>
+</body>
