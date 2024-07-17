@@ -5,15 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
-    "start" : "node src/server.ts",
-    "dev": "nodemon src/server.ts"
+    "start": "node src/main.ts",
+    "dev": "nodemon src/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
   },
   "directories": {
     "test": "test"
